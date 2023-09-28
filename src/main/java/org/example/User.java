@@ -8,7 +8,7 @@ public class User {
     private String firstName;
     private String lastName;
     private int membershipNumber;
-    private String[] books;
+    private String[] borrowedBooks;
 
     public User(String firstName, String lastName) {
         totalNumberOfUser++;
@@ -49,12 +49,12 @@ public class User {
         this.membershipNumber = membershipNumber;
     }
 
-    public String[] getBooks() {
-        return books;
+    public String[] getBorrowedBooks() {
+        return borrowedBooks;
     }
 
-    public void setBooks(String[] books) {
-        this.books = books;
+    public void setBorrowedBooks(String[] borrowedBooks) {
+        this.borrowedBooks = borrowedBooks;
     }
 
     @Override
@@ -62,23 +62,30 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return membershipNumber == user.membershipNumber && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Arrays.equals(books, user.books);
+        return membershipNumber == user.membershipNumber && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Arrays.equals(borrowedBooks, user.borrowedBooks);
     }
 
     @Override
     public int hashCode() {
         int result = Objects.hash(firstName, lastName, membershipNumber);
-        result = 31 * result + Arrays.hashCode(books);
+        result = 31 * result + Arrays.hashCode(borrowedBooks);
         return result;
     }
 
     @Override
     public String toString() {
+        if(this.borrowedBooks==null){
+            return "User{" +
+                    "firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", membershipNumber=" + membershipNumber +
+                    ", books= no books borrowed";
+        }
         return "User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", membershipNumber=" + membershipNumber +
-                ", books=" + Arrays.toString(books) +
+                ", books=" + Arrays.toString(borrowedBooks) +
                 '}';
     }
 }
