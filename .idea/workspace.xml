@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7ca196c-7203-41e8-aafa-00e17c8f6291" name="Changes" comment="add book package">
+    <list default="true" id="d7ca196c-7203-41e8-aafa-00e17c8f6291" name="Changes" comment="add class Novel">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/book/SpecialistBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/book/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/book/Novel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695902712110</updated>
       <workItem from="1695902713231" duration="1000" />
-      <workItem from="1695902854760" duration="5524000" />
+      <workItem from="1695902854760" duration="6796000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -120,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695906891317</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add class Novel">
+      <option name="closed" value="true" />
+      <created>1695908621331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695908621331</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +154,7 @@
     <MESSAGE value="add class UserTest" />
     <MESSAGE value="create 3 user objects" />
     <MESSAGE value="add book package" />
-    <option name="LAST_COMMIT_MESSAGE" value="add book package" />
+    <MESSAGE value="add class Novel" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class Novel" />
   </component>
 </project>

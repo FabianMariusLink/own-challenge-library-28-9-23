@@ -33,13 +33,12 @@ public class Novel extends Book{
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Novel{" +
                 "title='" + super.getTitle() + '\'' +
                 ", author='" + super.getAuthor() + '\'' +
                 ", isbn='" + super.getIsbn() + '\'' +
                 ", isBorrowed=" + super.getBorrowedStatus() +
-                "Novel{" +
-                "genre='" + genre + '\'' +
+                ", genre='" + genre + '\'' +
                 '}';
     }
 }

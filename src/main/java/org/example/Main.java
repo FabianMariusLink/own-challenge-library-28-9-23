@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.book.Book;
 import org.example.book.Novel;
+import org.example.book.SpecialistBook;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class Main {
         Novel novel4 = new Novel ("Der Vorleser", "Bernhard Schlink","978-3-442-31056-7", "Zeitgeschichtlicher Roman");
         Novel novel5 = new Novel ("Das Parfum", "Patrick Süskind","978-3-257-23028-4", "Kriminalroman");
 
+        SpecialistBook specialistBook1 = new SpecialistBook("Effective Java", "Joshua Bloch", "978-0-13-468599-1", "Fortgeschritten", "Java-Programmierung, Best Practices");
+
+
         System.out.println(novel1);
+        System.out.println(specialistBook1);
     }
 }

@@ -38,7 +38,7 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public boolean isBorrowed() {
+    public boolean getBorrowedStatus() {
         return isBorrowed;
     }
 
