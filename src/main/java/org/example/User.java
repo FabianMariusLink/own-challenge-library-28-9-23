@@ -8,7 +8,7 @@ public class User {
     private String firstName;
     private String lastName;
     private int membershipNumber;
-    private String[] borrowedBooks;
+    private String[] borrowedBooks = new String[5];
 
     public User(String firstName, String lastName) {
         totalNumberOfUser++;
@@ -23,6 +23,16 @@ public class User {
 
     public static void setTotalNumberOfUser(int totalNumberOfUser) {
         User.totalNumberOfUser = totalNumberOfUser;
+    }
+
+    public void addBookToBooksArray(String book){
+        for(int i = 0; i < this.borrowedBooks.length; i++){
+            if(borrowedBooks[i] == null){
+                borrowedBooks[i]=book;
+                break;
+            }
+
+        }
     }
 
     public String getFirstName() {

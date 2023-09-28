@@ -4,6 +4,8 @@ import org.example.book.Book;
 import org.example.book.Novel;
 import org.example.book.SpecialistBook;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         User user1 = new User ("Fabian", "Link");
@@ -23,5 +25,18 @@ public class Main {
 
         System.out.println(novel1);
         System.out.println(specialistBook1);
+
+        Book book12 = new Book("Der Steppenwolf", "Hermann Hesse", "978-3-596-90078-9");
+        Book book13 = new Book("Die Verwandlung", "Hermann Hesse", "978-3-596-90078-9");
+        Book book14 = new Book("Das Parfum", "Erich Maria Remarque", "978-3-499-22755-5");
+
+        book12.borrow(user1);
+        book13.borrow(user1);
+        book14.borrow(user1);
+        System.out.println(Arrays.toString(user1.getBorrowedBooks()));
+
+        /*
+        https://github.com/AljoschaNy/cgn-test-project-library.git
+         */
     }
 }

@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7ca196c-7203-41e8-aafa-00e17c8f6291" name="Changes" comment="add static variable totalBooks">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/book/BookTest.java" afterDir="false" />
+    <list default="true" id="d7ca196c-7203-41e8-aafa-00e17c8f6291" name="Changes" comment="created interface Borrowable">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/book/Borrowable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/book/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/book/BookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -58,12 +64,35 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.book" />
+      <recent name="org.example" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.example.book" />
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BookTest.borrow_whenBorrowMethodIsExecutedOnInstanceOfBook_thenThisInstanceIsIncludedInUsersArrayBorrowedBooks">
+    <configuration name="BookTest.borrow_whenBorrowMethodIsExecutedOnInstanceOfBook_thenThisInstanceIsIncludedInUsersArrayBorrowedBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="own-challenge-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.book" />
+      <option name="MAIN_CLASS_NAME" value="org.example.book.BookTest" />
+      <option name="METHOD_NAME" value="borrow_whenBorrowMethodIsExecutedOnInstanceOfBook_thenThisInstanceIsIncludedInUsersArrayBorrowedBooks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookTest.getTotalBooks_when2InstancesOfClassBook_thenReturn2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="own-challenge-library" />
       <extension name="coverage">
@@ -80,8 +109,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookTest.getTotalBooks_when2InstancesOfClassNovelBeenCreated_thenReturn2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="own-challenge-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.book" />
+      <option name="MAIN_CLASS_NAME" value="org.example.book.BookTest" />
+      <option name="METHOD_NAME" value="getTotalBooks_when2InstancesOfClassNovelBeenCreated_thenReturn2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTest.getTotalBooks_when2InstancesOfClassSpecialistBookBeenCreated_thenReturn2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="own-challenge-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.book" />
+      <option name="MAIN_CLASS_NAME" value="org.example.book.BookTest" />
+      <option name="METHOD_NAME" value="getTotalBooks_when2InstancesOfClassSpecialistBookBeenCreated_thenReturn2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookTest.borrow_whenBorrowMethodIsExecutedOnInstanceOfBook_thenThisInstanceIsIncludedInUsersArrayBorrowedBooks" />
+        <item itemvalue="JUnit.BookTest.getTotalBooks_when2InstancesOfClassSpecialistBookBeenCreated_thenReturn2" />
+        <item itemvalue="JUnit.BookTest.getTotalBooks_when2InstancesOfClassNovelBeenCreated_thenReturn2" />
         <item itemvalue="JUnit.BookTest.getTotalBooks_when2InstancesOfClassBook_thenReturn2" />
       </list>
     </recent_temporary>
@@ -95,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695902712110</updated>
       <workItem from="1695902713231" duration="1000" />
-      <workItem from="1695902854760" duration="9754000" />
+      <workItem from="1695902854760" duration="15985000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />
@@ -177,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695912618091</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add test BookTest">
+      <option name="closed" value="true" />
+      <created>1695913334677</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695913334677</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +277,10 @@
     <MESSAGE value="add class SpecialistBook" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="add static variable totalBooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add static variable totalBooks" />
+    <MESSAGE value="add test BookTest" />
+    <MESSAGE value="add test Novel with focus on Book.getTotalBooks" />
+    <MESSAGE value="add test SpecialistBook with focus on Book.getTotalBooks" />
+    <MESSAGE value="created interface Borrowable" />
+    <option name="LAST_COMMIT_MESSAGE" value="created interface Borrowable" />
   </component>
 </project>
