@@ -3,6 +3,7 @@ package org.example.book;
 import java.util.Objects;
 
 public class Book {
+    private static int totalBooks = 0;
     private String title;
     private String author;
     private String isbn;
@@ -12,6 +13,7 @@ public class Book {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
+        totalBooks++;
     }
 
     public String getTitle() {
