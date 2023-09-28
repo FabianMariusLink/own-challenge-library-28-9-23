@@ -16,7 +16,7 @@ A simple system for managing books in a library. Users can search for, borrow, a
     - `User` class: Contains user details like name, membership number, and borrowed books.
 
 2. **Inheritance:**
-    - `AcademicBook` class inherits from `Book`: A specialized book with additional properties like subject or difficulty level.
+    - `SpecialistBook` class inherits from `Book`: A specialized book with additional properties like subject or difficulty level.
     - `Novel` class inherits from `Book`: A specialized book with additional properties like genre or main characters.
 
 3. **Static Modifiers:**
@@ -26,8 +26,3 @@ A simple system for managing books in a library. Users can search for, borrow, a
 4. **Interfaces:**
     - `Borrowable` interface: Contains methods like `borrow()`, `returnBook()`, and `isBorrowed()`. The `Book`, `AcademicBook`, and `Novel` classes implement this interface.
     - `Searchable` interface: Contains a `search()` method, implemented by the `Library` class to search for books based on various criteria.
-
-## Additional Ideas
-
-- Extend the system to calculate fines for overdue books.
-- Add a feature to add and view book reviews and ratings.
